@@ -1,0 +1,49 @@
+html{
+  width: 100vw;
+
+}
+body{
+  width: 100%;
+}
+/*Header display*/
+
+.page_header{
+  width: 100%;
+  height: 40%;
+  display:flex;
+  justify-content: center;
+  vertical-align: middle;
+}
+.roadmap_header{
+  width: 50%;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+}
+.title_intro{
+  padding:0 25%;
+}
+.link_list{
+
+}
+.contact_links{
+
+}
+
+/*Main sections*/
+.roadmap_section{
+  border-top: solid black 4px;
+  display: flex;
+  justify-content: space-between;
+}
+.section_title{
+  display: block;
+}
+
+/*article style*/
+.article_card{
+  display: inline-block;
+  vertical-align: top;
+  width: 500px;
+
+}
