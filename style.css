@@ -13,7 +13,7 @@
 }
 html{
   width: 100vw;
-  font: courier, monospace;
+  font-family: courier, monospace;
   font-size: 16px;
   color:var(--textdark);
 }
@@ -33,8 +33,8 @@ body{
 .roadmap_header{
     width: 100%;
   }
-.ressource_list, .project_list{
-    width: 100%;
+.ressource_list, .project_list, .what, .why{
+    width: 90%;
     margin-bottom: 30px;
   }
 
@@ -45,13 +45,13 @@ body{
   .roadmap_header{
       width: 80%;
     }
-    .ressource_list, .project_list{
-      width: 45%;
+    .ressource_list, .project_list, .what, .why{
+      width: 40%;
     }
 }
 @media screen and (min-width: 1200px) {
   .article_card{
-    width: 30%;
+    width: 28%;
   }
   .roadmap_header{
       width: 50%;
@@ -103,6 +103,7 @@ ul{
 }
 .section_title{
   font-size: 2em;
+  font-weight: bold;
   text-align: center;
   margin: 0;
   padding: 2% 0;
@@ -119,19 +120,33 @@ ul{
 .article_card{
   display: inline-block;
   vertical-align: top;
+  margin: 2% 0;
+  padding: 2%;
+  background-image: linear-gradient(var(--grey2),var(--grey3));
 }
 .article_title{
   font-size: 1.5em;
+  margin: 2%;
+  width: 100%;
+  font-weight: bold;
 }
 .what, .why{
   display: inline-block;
-  width: 40%;
+  margin:2%;
   vertical-align: top;
 }
+.what{
+  font-weight: lighter;
+}
+.why{
+  font-weight: bold;
+}
+
 .ressource_list, .project_list{
   display: inline-block;
   vertical-align: top;
   list-style:circle;
+  margin:2%;
 }
 .comments{
   list-style: none;
@@ -142,4 +157,8 @@ ul{
 }
 .sublink{
   margin-left: 15px;
+}
+.task_done{
+  text-decoration: line-through;
+  color: var(--color2dark);
 }
