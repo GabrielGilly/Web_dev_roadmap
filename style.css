@@ -1,11 +1,30 @@
+:root{
+  --color1:#d50000;
+  --color1light:#ff5131;
+  --color1dark:#9b0000;
+  --color2:#64dd17;
+  --color2light:#9cff57;
+  --color2dark:#1faa00;
+  --textlight:#ffffff;
+  --textdark:#00000;
+  --grey1:#424242;
+  --grey2:#757575;
+  --grey3:#DDDDDD;
+}
 html{
   width: 100vw;
-
+  font: courier, monospace;
+  color:var(--textdark);
 }
 body{
   width: 100%;
+  /*
+  background-color: var(--grey3);
+  background-image: url("topography.svg");
+  background-repeat: repeat;
+  background-size: auto;
+  */
 }
-
 /*Reactive layout*/
 .article_card{
     width: 100%;
@@ -72,4 +91,7 @@ body{
 .article_card{
   display: inline-block;
   vertical-align: top;
+}
+.video{
+  color:var(--color1);
 }
