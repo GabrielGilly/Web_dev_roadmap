@@ -7,10 +7,20 @@ body{
 }
 
 /*Reactive layout*/
-@media  {
-
-} {
-
+@media screen and (max-width: 700px) {
+  .article_card{
+    width: 100%;
+  }
+}
+@media screen and (min-width: 700px) {
+  .article_card{
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .article_card{
+    width: 30%;
+  }
 }
 
 /*Header display*/
@@ -40,6 +50,7 @@ body{
 /*Main sections*/
 .roadmap_section{
   border-top: solid black 4px;
+  width: 100%;
 }
 .section_title{
 }
@@ -48,10 +59,9 @@ body{
 .article-container{
   display: flex;
   justify-content: space-around;
+  width: 100%;
 }
 .article_card{
   display: inline-block;
   vertical-align: top;
-  width: 500px;
-
 }
