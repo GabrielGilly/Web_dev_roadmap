@@ -5,8 +5,15 @@ html{
 body{
   width: 100%;
 }
-/*Header display*/
 
+/*Reactive layout*/
+@media  {
+
+} {
+
+}
+
+/*Header display*/
 .page_header{
   width: 100%;
   height: 40%;
@@ -33,14 +40,15 @@ body{
 /*Main sections*/
 .roadmap_section{
   border-top: solid black 4px;
-  display: flex;
-  justify-content: space-between;
 }
 .section_title{
-  display: block;
 }
 
 /*article style*/
+.article-container{
+  display: flex;
+  justify-content: space-around;
+}
 .article_card{
   display: inline-block;
   vertical-align: top;
