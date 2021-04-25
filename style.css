@@ -7,13 +7,14 @@
   --color2dark:#1faa00;
   --textlight:#ffffff;
   --textdark:#00000;
-  --grey1:#424242;
-  --grey2:#757575;
-  --grey3:#DDDDDD;
+  --grey1:rgba(110,110,110,1);
+  --grey2:rgba(110,110,110,0.5);
+  --grey3:rgba(110,110,110,0.25);
 }
 html{
   width: 100vw;
   font: courier, monospace;
+  font-size: 16px;
   color:var(--textdark);
 }
 body{
@@ -32,22 +33,39 @@ body{
 .roadmap_header{
     width: 100%;
   }
+.ressource_list, .project_list{
+    width: 100%;
+    margin-bottom: 30px;
+  }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 800px) {
   .article_card{
     width: 50%;
   }
   .roadmap_header{
       width: 80%;
     }
+    .ressource_list, .project_list{
+      width: 45%;
+    }
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1200px) {
   .article_card{
     width: 30%;
   }
   .roadmap_header{
       width: 50%;
     }
+}
+/*general rules*/
+a{
+  text-decoration: inherit;
+}
+ul{
+  list-style: none;
+  text-align: left;
+  padding: 0;
+  margin:0;
 }
 
 /*Header display*/
@@ -63,14 +81,19 @@ body{
   flex-flow: wrap;
   justify-content: center;
 }
+.page_title{
+  font-size: 3em;
+  text-transform: uppercase;
+}
 .title_intro{
-  padding:0 25%;
+  font-size: 1.5em;
 }
 .link_list{
-
+ justify-content: space-around;
 }
-.contact_links{
-
+.contact_link{
+  color:var(--color1);
+  text-decoration: none;
 }
 
 /*Main sections*/
@@ -79,6 +102,11 @@ body{
   width: 100%;
 }
 .section_title{
+  font-size: 2em;
+  text-align: center;
+  margin: 0;
+  padding: 2% 0;
+  background-image: linear-gradient(var(--grey2),var(--grey3));
 }
 
 /*article style*/
@@ -92,6 +120,26 @@ body{
   display: inline-block;
   vertical-align: top;
 }
-.video{
+.article_title{
+  font-size: 1.5em;
+}
+.what, .why{
+  display: inline-block;
+  width: 40%;
+  vertical-align: top;
+}
+.ressource_list, .project_list{
+  display: inline-block;
+  vertical-align: top;
+  list-style:circle;
+}
+.comments{
+  list-style: none;
+
+}
+.video, .book, .read, .course{
   color:var(--color1);
+}
+.sublink{
+  margin-left: 15px;
 }
